@@ -10,7 +10,7 @@
     "lint-fix": "yarn lint --fix",
     "start": "react-scripts start",
     "start-https": "HTTPS=true react-scripts start",
-    "build": "react-scripts build",
+    "build": "EXTEND_ESLINT=true react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
