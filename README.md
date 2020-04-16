@@ -19,7 +19,7 @@ the internet (see below).
 
 ## Use locally
 
-1. `git clone https://github.com/iov-one/address-generator.git && cd address-generator`
+1. `git clone https://github.com/iov-one/address-generator-star1.git && cd address-generator-star1`
 2. `yarn install && yarn start`
 3. Open http://localhost:3000/ in a modern browser (this step does not require an internet
    connection)
