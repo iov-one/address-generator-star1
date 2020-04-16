@@ -4,6 +4,8 @@ import Container from "react-bootstrap/Container";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Row from "react-bootstrap/Row";
 
+import Logo from "./Logo";
+
 interface JumboProps {
   readonly title: string;
   readonly network?: "mainnet" | "testnet";
@@ -14,18 +16,18 @@ class Jumbo extends React.Component<JumboProps, {}> {
     return (
       <Row>
         <Col>
-          <Jumbotron>
-            <Container>
-              <h2>
-                <span className="display-3 d-inline-block mr-2">{this.props.title}</span>
+          <Jumbotron style={{ marginBottom: "0.5em", marginTop: "0.5em", padding: "1em" }}>
+            <Container style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+              <h3 className="d-inline mr-2 pull-left">
+                {this.props.title}
+                &nbsp;
                 <small className="badge badge-sm badge-primary align-top" hidden={!this.props.network}>
                   {this.props.network}
                 </small>
-              </h2>
-              <p className="mb-0">
-                Here you can generate an IOV address
-                <span hidden={!this.props.network}> for {this.props.network}</span>.
-              </p>
+              </h3>
+              <span className="pull-right">
+                <Logo />
+              </span>
             </Container>
           </Jumbotron>
         </Col>

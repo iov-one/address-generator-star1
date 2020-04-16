@@ -8,8 +8,8 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 
-import Header from "./Header";
 import Jumbo from "./Jumbo";
+import Logo from "./Logo";
 
 interface AddressResponse {
   readonly address: Address;
@@ -64,7 +64,7 @@ class AppLedger extends React.Component<AppLedgerProps, AppLedgerState> {
   public render(): JSX.Element {
     return (
       <Container className="mb-5">
-        <Header />
+        <Logo />
         <Jumbo title="IOV Ledger" network={this.props.network} />
         <Row>
           <Col>
