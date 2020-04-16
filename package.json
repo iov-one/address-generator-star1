@@ -8,10 +8,10 @@
   "scripts": {
     "lint": "eslint -c .eslintrc.json --max-warnings 0 'src/**/*.ts{,x}'",
     "lint-fix": "yarn lint --fix",
-    "start": "react-scripts start",
-    "start-https": "HTTPS=true react-scripts start",
+    "start": "EXTEND_ESLINT=true react-scripts start",
+    "start-https": "EXTEND_ESLINT=true HTTPS=true react-scripts start",
     "build": "EXTEND_ESLINT=true react-scripts build",
-    "test": "react-scripts test",
+    "test": "EXTEND_ESLINT=true react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
