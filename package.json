@@ -1,10 +1,10 @@
 {
-  "name": "address-generator",
+  "name": "address-generator-star1",
   "version": "0.1.0",
   "private": true,
   "author": "IOV SAS <admin@iov.one>",
   "license": "Apache-2.0",
-  "homepage": "https://iov-one.github.io/address-generator/",
+  "homepage": "https://iov-one.github.io/address-generator-star1/",
   "scripts": {
     "lint": "eslint -c .eslintrc.json --max-warnings 0 'src/**/*.ts{,x}'",
     "lint-fix": "yarn lint --fix",
