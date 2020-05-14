@@ -13,7 +13,7 @@ function chainIdForAddress(network: "mainnet" | "testnet"): ChainId {
 export async function makeAddress(mnemonic: EnglishMnemonic, network: Network): Promise<Address> {
   const wallet = Secp256k1HdWallet.fromMnemonic(mnemonic.toString());
   const chainId = chainIdForAddress(network);
-  const identity = await wallet.createIdentity(chainId, HdPaths.iov(0));
+  const identity = await wallet.createIdentity(chainId, HdPaths.bip44(234, 0, 0, 0));
   const addressPefix = network === "mainnet" ? "star" : "tstar";
   const bankTokens = [
     {
