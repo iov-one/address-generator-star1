@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/address-generator-star1/static/css/main.3fbfedba.chunk.css",
-    "main.js": "/address-generator-star1/static/js/main.583c3639.chunk.js",
-    "main.js.map": "/address-generator-star1/static/js/main.583c3639.chunk.js.map",
+    "main.js": "/address-generator-star1/static/js/main.69ee9a34.chunk.js",
+    "main.js.map": "/address-generator-star1/static/js/main.69ee9a34.chunk.js.map",
     "runtime-main.js": "/address-generator-star1/static/js/runtime-main.42fb90dc.js",
     "runtime-main.js.map": "/address-generator-star1/static/js/runtime-main.42fb90dc.js.map",
     "static/css/2.4d454254.chunk.css": "/address-generator-star1/static/css/2.4d454254.chunk.css",
-    "static/js/2.edf9c51c.chunk.js": "/address-generator-star1/static/js/2.edf9c51c.chunk.js",
-    "static/js/2.edf9c51c.chunk.js.map": "/address-generator-star1/static/js/2.edf9c51c.chunk.js.map",
+    "static/js/2.146e5237.chunk.js": "/address-generator-star1/static/js/2.146e5237.chunk.js",
+    "static/js/2.146e5237.chunk.js.map": "/address-generator-star1/static/js/2.146e5237.chunk.js.map",
     "index.html": "/address-generator-star1/index.html",
-    "precache-manifest.d4fe2d0588ac6826b7aab0381444a0eb.js": "/address-generator-star1/precache-manifest.d4fe2d0588ac6826b7aab0381444a0eb.js",
+    "precache-manifest.34bbf7c7847f51235ffb53a6d03a3d3a.js": "/address-generator-star1/precache-manifest.34bbf7c7847f51235ffb53a6d03a3d3a.js",
     "service-worker.js": "/address-generator-star1/service-worker.js",
     "static/css/2.4d454254.chunk.css.map": "/address-generator-star1/static/css/2.4d454254.chunk.css.map",
     "static/css/main.3fbfedba.chunk.css.map": "/address-generator-star1/static/css/main.3fbfedba.chunk.css.map",
-    "static/js/2.edf9c51c.chunk.js.LICENSE.txt": "/address-generator-star1/static/js/2.edf9c51c.chunk.js.LICENSE.txt",
+    "static/js/2.146e5237.chunk.js.LICENSE.txt": "/address-generator-star1/static/js/2.146e5237.chunk.js.LICENSE.txt",
     "static/media/iov-logo.svg": "/address-generator-star1/static/media/iov-logo.ee12fc6d.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.42fb90dc.js",
     "static/css/2.4d454254.chunk.css",
-    "static/js/2.edf9c51c.chunk.js",
+    "static/js/2.146e5237.chunk.js",
     "static/css/main.3fbfedba.chunk.css",
-    "static/js/main.583c3639.chunk.js"
+    "static/js/main.69ee9a34.chunk.js"
   ]
 }
