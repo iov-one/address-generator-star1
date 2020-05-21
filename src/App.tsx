@@ -53,7 +53,7 @@ class App extends React.Component<AppProps, AppState> {
             <h4>Enter your mnemonic:</h4>
             <p>
               We support English BIP39 mnemonics between 12 and 24 words. The mnemonic represents your private
-              key, which only you should know. If you lose it then you will not be able to access that account
+              key, which only you should know. If you lose it then you will not be able to access your account
               any more.
             </p>
             <div>

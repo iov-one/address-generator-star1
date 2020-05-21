@@ -15,24 +15,15 @@ class Start extends React.Component<StartProps, {}> {
         <Jumbo title="Starname Network Address Generator" />
         <Row>
           <Col>
-            <h4>Generate software secret</h4>
-            <p>Your address will get a network identifier for one of the following networks.</p>
+            <p>&nbsp;</p>
           </Col>
         </Row>
         <Row>
           <Col className=""></Col>
           <Col className="col-4">
             <Link to="/mainnet" className="btn btn-lg btn-block btn-primary">
-              Mainnet
+              Generate your star1 prefixed address
             </Link>
-            <p>The Starname main network</p>
-          </Col>
-          <Col className=""></Col>
-          <Col className="col-4">
-            <Link to="/testnet" className="btn btn-lg btn-block btn-primary">
-              Testnet
-            </Link>
-            <p>All test networks</p>
           </Col>
           <Col className=""></Col>
         </Row>
