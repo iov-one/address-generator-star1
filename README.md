@@ -1,8 +1,8 @@
-# IOV Address Generator
+# IOV Star1 Address Generator
 
 [![Build Status](https://travis-ci.com/iov-one/address-generator-star1.svg?branch=master)](https://travis-ci.com/iov-one/address-generator-star1)
 
-Generates addresses for the Starname networks.
+Generates addresses for the Starname network.
 
 ## Prerequisites
 
