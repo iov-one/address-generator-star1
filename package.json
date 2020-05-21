@@ -8,10 +8,10 @@
   "scripts": {
     "lint": "eslint -c .eslintrc.json --max-warnings 0 'src/**/*.ts{,x}'",
     "lint-fix": "yarn lint --fix",
-    "start": "react-scripts start",
-    "start-https": "HTTPS=true react-scripts start",
+    "start": "EXTEND_ESLINT=true react-scripts start",
+    "start-https": "EXTEND_ESLINT=true HTTPS=true react-scripts start",
     "build": "EXTEND_ESLINT=true react-scripts build",
-    "test": "react-scripts test",
+    "test": "EXTEND_ESLINT=true react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
@@ -26,8 +26,8 @@
     "not op_mini all"
   ],
   "dependencies": {
+    "@cosmwasm/bcp": "^0.7.7",
     "@iov/bcp": "^2.2.0",
-    "@iov/bns": "^2.2.0",
     "@iov/crypto": "^2.2.0",
     "@iov/encoding": "^2.2.0",
     "@iov/keycontrol": "^2.2.0",
@@ -42,6 +42,7 @@
     "react-dom": "^16.9.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "^3.1.1",
+    "react-scroll": "^1.7.16",
     "typescript": "~3.5"
   },
   "devDependencies": {
@@ -49,6 +50,7 @@
     "@types/react-bootstrap-typeahead": "^3.4.5",
     "@types/react-dom": "^16.8.5",
     "@types/react-router-dom": "^4.3.4",
+    "@types/react-scroll": "^1.5.4",
     "eslint": "^6",
     "eslint-config-prettier": "^6.0.0",
     "eslint-config-react-app": "^5.0.1",

@@ -6,9 +6,9 @@ import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import Scroll from "react-scroll";
 
 import { makeAddress } from "./address";
-import Header from "./Header";
 import Jumbo from "./Jumbo";
 import MnemonicInput from "./MnemonicInput";
 
@@ -40,18 +40,21 @@ class App extends React.Component<AppProps, AppState> {
     };
   }
 
+  public componentDidUpdate(): void {
+    if (this.state.address) Scroll.animateScroll.scrollToBottom();
+  }
+
   public render(): JSX.Element {
     return (
       <Container className="mb-5">
-        <Header />
-        <Jumbo title="Address Generator" network={this.props.network} />
+        <Jumbo title="Starname Network Address Generator" network={this.props.network} />
         <Row>
           <Col>
-            <h3>Enter your mnemonic:</h3>
+            <h4>Enter your mnemonic:</h4>
             <p>
               We support English BIP39 mnemonics between 12 and 24 words. The mnemonic represents your private
-              key, which only you should know. If you lose it, you will not be able to access that account any
-              more.
+              key, which only you should know. If you lose it then you will not be able to access that account
+              any more.
             </p>
             <div>
               <div className="d-flex justify-content-end">
@@ -113,14 +116,15 @@ class App extends React.Component<AppProps, AppState> {
           <Col>
             <Alert variant="success">
               <p className="mb-0">
-                <strong>Your IOV address:</strong>
+                <strong>Your Starname network address:</strong>
                 <br />
                 {this.state.address}
               </p>
             </Alert>
             <Alert variant="warning">
               <p className="mb-0">
-                This browser tab contains sensitive information in memory. Please close it now.
+                This browser tab contains sensitive information in memory. Please close it as soon as you
+                record your mnemonic.
               </p>
             </Alert>
           </Col>
@@ -130,7 +134,7 @@ class App extends React.Component<AppProps, AppState> {
   }
 
   private async makeAddress(): Promise<void> {
-    const answer = prompt("Did you store the mnemonic in a secure location? If yes, please type 'yes'.");
+    const answer = prompt("Did you store the mnemonic in a secure location? If yes then please type 'yes'.");
     if ((answer || "").trim().toLowerCase() !== "yes") {
       return;
     }
